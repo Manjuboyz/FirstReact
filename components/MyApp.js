@@ -1,10 +1,11 @@
 import React from "react";
 import ToDo from "../ToDo";
 import Joke from "../src/Joke";
-import todosData from "../todosData";
+import TodosData from "../todosData";
 
 function MyApp() {
-  const todo = todosData.map(item => <Joke key={item.id} item={item} />);
+  const todo = TodosData.map(item => <Joke key={item.id} item={item} />);
+  console.log(todo);
   return <div>{todo}</div>;
 }
 
