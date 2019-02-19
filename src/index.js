@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import MyApp from "../components/MyApp"; // you also can put "/MyApp.js"
 
-// render(what do I waan to render, where do i want to render)
-ReactDOM.render("<h1>Hello World!</h1>", document.getElementById("app"));
+// render(what do I want to render, where do i want to render)
+ReactDOM.render(<MyApp />, document.getElementById("app"));
